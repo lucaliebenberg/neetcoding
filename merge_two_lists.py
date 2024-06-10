@@ -24,5 +24,7 @@ class Solution:
           tail.next = list1
       elif list2:
           tail.next = list2
+      
+      # can also do -> tail.next = list1 or list2
 
       return dummy.next
