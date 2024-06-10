@@ -16,6 +16,8 @@ class Solution:
           else:
               tail.next = list2
               list2 = list2.next
+          
+          tail = tail.next
 
       # if any list is not empty, add to end of tail
       if list1:
