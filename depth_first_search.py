@@ -1,5 +1,6 @@
 """
 BST -> Depth-First-Search (DFS)
+Time complexity: 0(logn)
 """
 def inorder(root):
     if not root:
