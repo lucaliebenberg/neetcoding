@@ -11,7 +11,7 @@ Heap / Priority Queue
 
 -> leftChild = 2 * i
 -> rightChild = 2 * i + 1
--> parent = i /2
+-> parent = i / 2
 
 ^^ only true for a complete BT
 
