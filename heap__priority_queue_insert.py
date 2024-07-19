@@ -1,5 +1,6 @@
 """
-Heap / Priority Queue --> Insertion
+Heap / Priority Queue --> Insertion (push)
+Time complexity: O(logn)
 """
 
 class Heap:
