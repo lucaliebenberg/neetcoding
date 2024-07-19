@@ -1,6 +1,7 @@
-# Min Heap
+"""
+Min Heap --> Heapify
+"""
 class Heap:
-    # ... not showing push, pop to save space.
     
     def heapify(self, arr):
         # 0-th position is moved to the end
