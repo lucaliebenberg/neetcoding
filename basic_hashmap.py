@@ -1,5 +1,5 @@
 """
-Basic hasmap implementation
+Basic hashmap implementation
 Time complexity: 0(1) --> average case
 """
 
