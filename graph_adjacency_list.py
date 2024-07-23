@@ -1,3 +1,4 @@
+from collections import deque
 """
 Graphs --> Adjacency List
 """
@@ -24,7 +25,7 @@ for src, dst in edges:
     adjList[src].append(dst)
 
 
-# Count paths (backtracking)
+# Count paths --> DFS (backtracking)
 """
 Time complexity: O(n**v)
 """
@@ -43,3 +44,32 @@ def dfs(node, target, adjList, visit):
     return count
 
 print(dfs("A", "E", adjList, set()))
+
+
+# Shortest path from node to target --> BFS
+"""
+Size of graph: O(v)
+Time complexity: O(V + E)
+Space complexity: O(V)
+"""
+def bfs(node, target, adjList):
+    length = 0
+    visit = set()
+    visit.add(node)
+    queue = deque()
+    queue.append(node)
+
+    while queue:
+        for i in range(len(queue)):
+            curr = queue.popleft()
+            if curr == target:
+                return length
+            
+            for neighbour in adjList[curr]:
+                if neighbour not in visit:
+                    visit.add(neighbour)
+                    queue.append(neighbour)
+        length += 1
+    return length
+
+print(bfs("A", "E", adjList))
