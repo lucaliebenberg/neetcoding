@@ -28,6 +28,8 @@ for src, dst in edges:
 # Count paths --> DFS (backtracking)
 """
 Time complexity: O(n**v)
+
+E <= V**2
 """
 def dfs(node, target, adjList, visit):
     if node in visit:
