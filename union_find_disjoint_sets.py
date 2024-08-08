@@ -19,7 +19,7 @@ class Unionfind:
     def find(self, n):
         p = self.par[n]
         while p != self.par[n]:
-            self.par[p] = self.par[self.par[p]]
+            self.par[p] = self.par[self.par[p]] # path compression
             p = self.par[p]
         return p
 
