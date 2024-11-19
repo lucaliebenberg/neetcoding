@@ -6,8 +6,8 @@ class Solution(object):
         :rtype: int
         """
         i = 0
-        for x in nums:
-            if x != val:
-                nums[i] = x
+        while i < len(nums):
+            if nums[i] == val:
+                nums.pop(i)
+            else:
                 i += 1
-        return i
